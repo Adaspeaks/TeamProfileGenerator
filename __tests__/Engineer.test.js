@@ -18,7 +18,7 @@ describe("Engineer", () => {
       "placeholder@email.com",
       "placeholder"
     );
-    expect(newEngineer.id).toBe("101");
+    expect(newEngineer.id).toBe(101);
   });
 
   it("should have an email address", () => {

@@ -35,6 +35,6 @@ describe("intern", () => {
       "placeholder@email.com",
       "Beauchamp Champs"
     );
-    expect(newIntern.school).toBe("Beaauchamp Champs");
+    expect(newIntern.school).toBe("Beauchamp Champs");
   });
 });
