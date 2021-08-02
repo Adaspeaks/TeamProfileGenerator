@@ -8,6 +8,7 @@ const managerQuestions = require("./src/managerQuestions");
 const engineerQuestions = require("./src/engineerQuestions");
 const internQuestions = require("./src/internQuestions");
 const starterHTML = require("./src/starterHTML");
+const closerHTML = require("./src/closerHTML");
 
 buildHTML = () => {
   inquirer.prompt(mainMenu).then(function (data) {
