@@ -110,12 +110,12 @@ cardCreate = (data, extra, closerHTML) => {
             <p class = "card-etc">${extra}${data.getSpecial()}</p>
         </div>
     </div>
-</section`
+</section>`
     if (closerHTML){
         return card + closerHTML
     }
     else {
-        return profile
+        return card;
     }
 }
 

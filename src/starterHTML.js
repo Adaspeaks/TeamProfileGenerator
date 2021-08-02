@@ -10,4 +10,4 @@ module.exports = `<!DOCTYPE html>
 <body>
     <h1>The Team</h1>
 
-    <div> class = "teamCards"</div>`
+    <div class = "teamCards"></div>`
