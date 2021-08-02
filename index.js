@@ -88,6 +88,37 @@ buildHTML = () => {
   });
 };
 
+cardCreate = (data, extra, closerHTML) => {
+    let card = `
+    <section class = "card-holder">
+    <div class = "card-title">
+        <div>
+            <p class = "card-name">${data.getName()}</p>
+        </div>
+        <div>
+            <p class = "card-role">${data.getRole()}</p>
+        </div>
+    </div>
+    <div class= "card-body">
+        <div>
+            <p class= "card-ID">ID: ${data.getId()}</p>
+        </div>
+        <div>
+            <p class = "card-email">${data.getEmail()}</p>
+        </div>
+        <div>
+            <p class = "card-etc">${extra}${data.getSpecial()}</p>
+        </div>
+    </div>
+</section`
+    if (closerHTML){
+        return card + closerHTML
+    }
+    else {
+        return profile
+    }
+}
+
 init = () => {
   fs.writeFile("./dist/index.html", starterHTML, (err) => {});
   buildHTML(inquirer);
